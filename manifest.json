@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "Batata Vada",
+	"version": "1.2",
+	"description": "This is an Add-On for Batata Vada. HOHOHOHO",
+	"content_scripts": [
+		//mini json
+		{
+			"matches": ["<all_urls>"],//on which website to run this add on
+			//to run site on multiple sites we use regex
+			//    *//*/*  <schema/host/path>
+			"js": ["batata.js"] //what all js file you should run
+		}
+	]
+
+}
